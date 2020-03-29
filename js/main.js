@@ -1,4 +1,3 @@
-$(".img-skill").on('click', function(){
-  $(this).hide();
-  alert("hi");
-})
+function backToTop() {
+	window.scrollTo(pageXOffset, 0);
+};
