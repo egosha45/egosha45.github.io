@@ -116,49 +116,59 @@
     </div>
   </section>
   <section class="images">
-    <!--Задаем grid-container-->
-    <div class="grid-container" id="grid-container">
-      <img src="img/img2.jpg" class="photo-grid">
-      <img src="img/img1.jpg" class="photo-grid">
-      <img src="img/img2.jpg" class="photo-grid">
-      <img src="img/img1.jpg" class="photo-grid">
-      <img src="img/img1.jpg" class="photo-grid">
-      <img src="img/img2.jpg" class="photo-grid">
-      <img src="img/img1.jpg" class="photo-grid">
-      <img src="img/img2.jpg" class="photo-grid">
+    <div class="container">
+      <!--Задаем grid-container-->
+      <div class="grid-container" id="grid-container">
+        <img src="img/img2.jpg" class="photo-grid">
+        <img src="img/img1.jpg" class="photo-grid">
+        <img src="img/img2.jpg" class="photo-grid">
+        <img src="img/img1.jpg" class="photo-grid">
+        <img src="img/img1.jpg" class="photo-grid">
+        <img src="img/img2.jpg" class="photo-grid">
+        <img src="img/img1.jpg" class="photo-grid">
+        <img src="img/img2.jpg" class="photo-grid">
+      </div>
     </div>
   </section>
   <section class="microsoft-section">
-    <div class="flex-container2">
-      <img src="img/img3.jpg">
-      <img src="img/img3.jpg">
-      <img src="img/img3.jpg">
-      <img src="img/img3.jpg">
+    <div class="container">
+      <div class="flex-container2">
+        <img src="img/img3.jpg">
+        <img src="img/img3.jpg">
+        <img src="img/img3.jpg">
+        <img src="img/img3.jpg">
+      </div>
     </div>
   </section>
   <!--Секция для формы-->
   <section class="form-section">
-    <div class="title-min" id="form-title">Хотите веб-сайт?</div>
-    <div class="about-text">
-        Форма для связи с автором проекта , вы можете оставить свои отзыв и
-        <br> предложения для реализаций в дальнейшем.
-    </div>
-    <!--Задаем форму-->
-    <form class="main-form">
-      <div class="form-container">
-        <div class="form-container-small">
-          <input type="text" name="Name" class="form-name">
-          <input type="text" name="Email" class="form-email">
-        </div>
-        <textarea class="form-message"></textarea>
-        <button id="form-button">Отправить</button>
+    <div class="container">
+      <div class="flex-container50">
+      <div class="title-min">Хотите веб-сайт?</div>
+      <div class="about-text">
+          Форма для связи с автором проекта , вы можете оставить свои отзыв и
+          <br> предложения для реализаций в дальнейшем.
       </div>
-    </form>
+      <!--Задаем форму-->
+      <form class="main-form">
+        <div class="form-container">
+          <div class="form-container-small">
+            <input type="text" name="Name" class="form-name" placeholder="Имя">
+            <input type="text" name="Email" class="form-email" placeholder="Email">
+          </div>
+          <textarea class="form-message" placeholder="Сообщение"></textarea>
+          <button id="form-button">Отправить</button>
+        </div>
+      </form>
+      </div>
+    </div>
   </section>
   <footer class="footer" id="footer">
-    <div class="footer-container">
-      <div class="name-surname">Болтачев Егор</div>
-      <div class="protect">(с) 2020. Все права защищены</div>
+    <div class="container">
+      <div class="footer-container">
+        <div class="name-surname">Болтачев Егор</div>
+        <div class="protect">(с) 2020. Все права защищены</div>
+      </div>
     </div>
   </footer>
 </body>
