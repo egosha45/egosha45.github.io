@@ -13,16 +13,18 @@
 </head>
 <!--Комментарий-->
 <body>
+  <!---->
   <header class="header" id="header">
+    <!--Задаем контейнер для работы с файлами-->
     <div class="container">
       <nav class="nav">
         <div class="logo">WD</div>
         <ul class="menu">
-          <li class="menu-item"><a href="#" type="active">Главная</a></li>
-          <li class="menu-item"><a href="#" type="active">Автор</a></li>
-          <li class="menu-item"><a href="#" type="active">Работы</a></li>
+          <li class="menu-item"><a href="#header" type="active">Главная</a></li>
+          <li class="menu-item"><a href="#about" type="active">Автор</a></li>
+          <li class="menu-item"><a href="#video-section" type="active">Работы</a></li>
           <li class="menu-item"><a href="#" type="active">Процесс</a></li>
-          <li class="menu-item"><a href="#" type="active">Контакты</a></li>
+          <li class="menu-item"><a href="#footer" type="active">Контакты</a></li>
         </ul>
       </nav>
       <div class="offer">
@@ -51,15 +53,16 @@
         <div class="title-min about-title">Обо мне</div>
         <div class="about-text">
           <p>
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-            <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-            <br> на латинице с начала XVI века.
+            Начинающий Frontend-veb-developer прошел курсы html-academi изучил
+            <br> документацию learn javaskript ,прочитал книги byte of python ,
+            <br> совершенный код , и грокаем алгоритмы.
           </p>
         </div>
       </div>
     </div>
   </section>
   <section class="skills-promo" id="skills-promo">
+    <!--Задаем flex-container-->
     <div class="container">
       <div class="skill-promo-pic">
         <div class="img-skill"> <img src="img/projects.png" alt="project"></div>
@@ -95,10 +98,10 @@
       </div>
     </div>
   </section>
-  <!--Моя часть-->
   <input class="fixed-button" id="fixed-button" type="button" value="UP" onclick="backToTop()">
   <section class="video-section" id="video-section">
     <div class="container">
+      <!--Задаем flex-container-->
       <div class="flex-container">
          <div class="title-min" id="work-title">Как я работаю</div>
         <div class="about-text" id="lorem-ipsum3">
@@ -112,7 +115,8 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="images">
+    <!--Задаем grid-container-->
     <div class="grid-container" id="grid-container">
       <img src="img/img2.jpg" class="photo-grid">
       <img src="img/img1.jpg" class="photo-grid">
@@ -132,12 +136,12 @@
       <img src="img/img3.jpg">
     </div>
   </section>
+  <!--Секция для формы-->
   <section class="form-section">
     <div class="title-min" id="form-title">Хотите веб-сайт?</div>
     <div class="about-text">
-        Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-        <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-        <br> на латинице с начала XVI века.
+        Форма для связи с автором проекта , вы можете оставить свои отзыв и
+        <br> предложения для реализаций в дальнейшем.
     </div>
     <form class="main-form">
       <div class="form-container">
@@ -150,9 +154,9 @@
       </div>
     </form>
   </section>
-  <footer>
+  <footer class="footer" id="footer">
     <div class="footer-container">
-      <div class="name-surname">Иванов Иван</div>
+      <div class="name-surname">Болтачев Егор</div>
       <div class="protect">(с) 2020. Все права защищены</div>
     </div>
   </footer>

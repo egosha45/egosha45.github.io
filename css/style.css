@@ -275,6 +275,7 @@ btn {
   }
 
   .form-section{
+    padding-top: 5%;
     background: #EEEFF1;
   }
 
@@ -323,7 +324,7 @@ btn {
     font-family: Roboto; 
   }
 
-  footer{
+  .footer{
     background: #34547A;
     height: 151px;
   }
@@ -335,6 +336,7 @@ btn {
   }
 
   .name-surname{
+    padding-top: 2%;
     font-family: Roboto;
     font-size: 21px;
     font-weight: 500;
@@ -428,11 +430,19 @@ btn {
   .logo {
     margin-bottom: 5%;
   }
+  
 }
 
 @media screen and (max-width: 900px)  {
-  header  {
-    background-color: red;
+  .video  {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 480px 480px;
   }
 }
 
