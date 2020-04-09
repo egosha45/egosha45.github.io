@@ -12,6 +12,7 @@
   <script type="text/javascript" src="js.main.js"></script>
 </head>
 <!--Комментарий-->
+
 <body>
   <!---->
   <header class="header" id="header">
@@ -98,16 +99,22 @@
       </div>
     </div>
   </section>
+  <!--TODO больше как рекомендация. лучше вынести кнопку до header, чтобы не терять,
+   она по умолчанию ни к чему не относится-->
   <input class="fixed-button" id="fixed-button" type="button" value="UP" onclick="backToTop()">
+
   <section class="video-section" id="video-section">
     <div class="container">
       <!--Задаем flex-container-->
       <div class="flex-container">
-         <div class="title-min" id="work-title">Как я работаю</div>
+        <!--TODO проблема с отступом перед title-min. Это стилистическая ошибка
+        Про стандарт мировой можно почитать загуглив PEP8.
+        Отступы желательно в 4 пробела. Поставить на tab-->
+        <div class="title-min" id="work-title">Как я работаю</div>
         <div class="about-text" id="lorem-ipsum3">
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-            <br> на латинице с начала XVI века.
+          <br> на латинице с начала XVI века.
         </div>
         <div>
           <iframe width="1110px" height="600px" src="https://www.youtube.com/embed/3pqaEvOsN8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
@@ -132,6 +139,10 @@
   </section>
   <section class="microsoft-section">
     <div class="container">
+      <!--TODO проблема с названиями, непонятное по смыслу flex-container2.
+      Все должно четко разграничиваться по смыслу.
+      Это стилистическая ошибка, нарушение стандарта PEP8.
+      Во-вторых. для картинок alt прописать, если сломаются. И где class для катинок?-->
       <div class="flex-container2">
         <img src="img/img3.jpg">
         <img src="img/img3.jpg">
@@ -143,23 +154,24 @@
   <!--Секция для формы-->
   <section class="form-section">
     <div class="container">
+      <!--TODO отступ! что внутри flex-container50-->
       <div class="flex-container50">
-      <div class="title-min">Хотите веб-сайт?</div>
-      <div class="about-text">
+        <div class="title-min">Хотите веб-сайт?</div>
+        <div class="about-text">
           Форма для связи с автором проекта , вы можете оставить свои отзыв и
           <br> предложения для реализаций в дальнейшем.
-      </div>
-      <!--Задаем форму-->
-      <form class="main-form">
-        <div class="form-container">
-          <div class="form-container-small">
-            <input type="text" name="Name" class="form-name" placeholder="Имя">
-            <input type="text" name="Email" class="form-email" placeholder="Email">
-          </div>
-          <textarea class="form-message" placeholder="Сообщение"></textarea>
-          <button id="form-button">Отправить</button>
         </div>
-      </form>
+        <!--Задаем форму-->
+        <form class="main-form">
+          <div class="form-container">
+            <div class="form-container-small">
+              <input type="text" name="Name" class="form-name" placeholder="Имя">
+              <input type="text" name="Email" class="form-email" placeholder="Email">
+            </div>
+            <textarea class="form-message" placeholder="Сообщение"></textarea>
+            <button id="form-button">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -172,4 +184,5 @@
     </div>
   </footer>
 </body>
+
 </html>
