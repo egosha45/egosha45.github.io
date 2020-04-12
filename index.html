@@ -116,7 +116,7 @@
           <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
           <br> на латинице с начала XVI века.
         </div>
-        <div>
+        <div class="video-box">
           <iframe width="1110px" height="600px" src="https://www.youtube.com/embed/3pqaEvOsN8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
         </div>
       </div>
@@ -155,12 +155,12 @@
   <section class="form-section">
     <div class="container">
       <!--TODO отступ! что внутри flex-container50-->
-      <div class="flex-container50">
-        <div class="title-min">Хотите веб-сайт?</div>
-        <div class="about-text">
-          Форма для связи с автором проекта , вы можете оставить свои отзыв и
-          <br> предложения для реализаций в дальнейшем.
-        </div>
+        <div class="flex-container50">
+          <div class="title-min">Хотите веб-сайт?</div>
+          <div class="about-text">
+            Форма для связи с автором проекта , вы можете оставить свои отзыв и
+            <br> предложения для реализаций в дальнейшем.
+          </div>
         <!--Задаем форму-->
         <form class="main-form">
           <div class="form-container">
@@ -168,8 +168,12 @@
               <input type="text" name="Name" class="form-name" placeholder="Имя">
               <input type="text" name="Email" class="form-email" placeholder="Email">
             </div>
-            <textarea class="form-message" placeholder="Сообщение"></textarea>
-            <button id="form-button">Отправить</button>
+            <div class="form-container-small2">
+              <textarea class="form-message" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button-container">
+              <input type="button" name="form-button" value="отправить" id="form-button">
+            </div>
           </div>
         </form>
       </div>
@@ -178,8 +182,15 @@
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer-container">
-        <div class="name-surname">Болтачев Егор</div>
-        <div class="protect">(с) 2020. Все права защищены</div>
+        <div class="small-box">
+            <div class="name-surname">Болтачев Егор (с) 2020.</div>
+            <div class="protect">Все права защищены</div>
+        </div>
+        <div class="small-box2">
+            <img src="img/VKlogo.png" class="VKlogo-footer">          
+            <img src="img/VKlogo.png" class="VKlogo-footer">
+            <img src="img/VKlogo.png" class="VKlogo-footer">          
+        </div>
       </div>
     </div>
   </footer>
