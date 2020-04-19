@@ -21,11 +21,11 @@
       <nav class="nav">
         <div class="logo">WD</div>
         <ul class="menu">
-          <li class="menu-item"><a href="#header" type="active">Главная</a></li>
-          <li class="menu-item"><a href="#about" type="active">Автор</a></li>
-          <li class="menu-item"><a href="#video-section" type="active">Работы</a></li>
-          <li class="menu-item"><a href="#" type="active">Процесс</a></li>
-          <li class="menu-item"><a href="#footer" type="active">Контакты</a></li>
+          <li class="menu-item"><a href="#header" type="active" class="menu-element">Главная</a></li>
+          <li class="menu-item"><a href="#about" type="active" class="menu-element">Автор</a></li>
+          <li class="menu-item"><a href="#video-section" type="active" class="menu-element">Работы</a></li>
+          <li class="menu-item"><a href="#" type="active" class="menu-element">Процесс</a></li>
+          <li class="menu-item"><a href="#footer" type="active" class="menu-element">Контакты</a></li>
         </ul>
       </nav>
       <div class="offer">
@@ -94,15 +94,13 @@
           </div>
         </div>
         <div class="skills-pic">
-          <img src="img/photo_developer.png" alt="developer">
+          <img src="img/photo_developer.png" alt="developer" class="developer">
         </div>
       </div>
     </div>
   </section>
   <!--TODO больше как рекомендация. лучше вынести кнопку до header, чтобы не терять,
    она по умолчанию ни к чему не относится-->
-  <input class="fixed-button" id="fixed-button" type="button" value="UP" onclick="backToTop()">
-
   <section class="video-section" id="video-section">
     <div class="container">
       <!--Задаем flex-container-->
@@ -126,14 +124,14 @@
     <div class="container">
       <!--Задаем grid-container-->
       <div class="grid-container" id="grid-container">
-        <img src="img/img2.jpg" class="photo-grid">
-        <img src="img/img1.jpg" class="photo-grid">
-        <img src="img/img2.jpg" class="photo-grid">
-        <img src="img/img1.jpg" class="photo-grid">
-        <img src="img/img1.jpg" class="photo-grid">
-        <img src="img/img2.jpg" class="photo-grid">
-        <img src="img/img1.jpg" class="photo-grid">
-        <img src="img/img2.jpg" class="photo-grid">
+        <div class="photo-grid grid-element1"><img src="img/img1.jpg"></div>        
+        <div class="photo-grid grid-element2"><img src="img/img2.jpg"></div>
+        <div class="photo-grid grid-element3"><img src="img/img1.jpg"></div>
+        <div class="photo-grid grid-element4"><img src="img/img2.jpg"></div>
+        <div class="photo-grid grid-element5"><img src="img/img2.jpg"></div>
+        <div class="photo-grid grid-element6"><img src="img/img1.jpg"></div>
+        <div class="photo-grid grid-element7"><img src="img/img2.jpg"></div>
+        <div class="photo-grid grid-element8"><img src="img/img1.jpg"></div>        
       </div>
     </div>
   </section>
@@ -144,10 +142,10 @@
       Это стилистическая ошибка, нарушение стандарта PEP8.
       Во-вторых. для картинок alt прописать, если сломаются. И где class для катинок?-->
       <div class="flex-container2">
-        <img src="img/img3.jpg">
-        <img src="img/img3.jpg">
-        <img src="img/img3.jpg">
-        <img src="img/img3.jpg">
+        <img src="img/img3.jpg" class="mine-img">
+        <img src="img/img3.jpg" class="mine-img">
+        <img src="img/img3.jpg" class="mine-img">
+        <img src="img/img3.jpg" class="mine-img">
       </div>
     </div>
   </section>
@@ -156,7 +154,7 @@
     <div class="container">
       <!--TODO отступ! что внутри flex-container50-->
         <div class="flex-container50">
-          <div class="title-min">Хотите веб-сайт?</div>
+          <div class="title-min" id="veb-site">Хотите веб-сайт?</div>
           <div class="about-text">
             Форма для связи с автором проекта , вы можете оставить свои отзыв и
             <br> предложения для реализаций в дальнейшем.
@@ -184,7 +182,7 @@
       <div class="footer-container">
         <div class="small-box">
             <div class="name-surname">Болтачев Егор (с) 2020.</div>
-            <div class="protect">Все права защищены</div>
+            <div class="protect">(с)Все права защищены.</div>
         </div>
         <div class="small-box2">
             <img src="img/VKlogo.png" class="VKlogo-footer">          
