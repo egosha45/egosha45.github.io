@@ -168,11 +168,6 @@ btn {
 }
 
 .skill-promo-pic {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -302,11 +297,14 @@ btn {
     grid-column: 4;
     grid-row: 2;
   } 
-   
 
   /*Работа с флексами*/
+
+  .images{
+    height: 950px;
+  }
+
   .flex-container2{
-    height: 292px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -326,6 +324,11 @@ btn {
   .form-section{
     padding-top: 5%;
     background: #EEEFF1;
+  }
+
+  .microsoft-section{
+    height: 292px;
+    width: 100%;
   }
 
   .mine-img{
@@ -458,15 +461,6 @@ btn {
 @media screen and (max-width: 1400px) and (min-width:1200px) {
   .header {
     padding-left: 10%;
-  }
-
-  .grid-container{
-    grid-template-columns: 33.33%  33.33%  33.33%;
-    grid-template-rows: 480px 480px;
-  }
-
-  .grid-photo1,.grid-photo2{
-    display: none;
   }
 }
 
