@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"@mixin my_flex {\n\t display: flex;\n\t display: -webkit-flex;\n\t display: -moz-flex;\n\t display: -ms-flex;\n\t display: -o-flex; }\n.skill-promo-pic {\n\t@include my_flex; }\n.skills-all {\n\t@include my_flex; }\n"
+	],
+	"names": [],
+	"mappings": ";AAMA,AAAA,gBAAgB,CAAC;EALf,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,OAAO;CAEE;;;AACpB,AAAA,WAAW,CAAC;EAPV,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,QAAQ;EACjB,OAAO,EAAE,OAAO;CAIE"
+}
