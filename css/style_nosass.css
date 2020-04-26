@@ -254,7 +254,7 @@ btn {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .grid-element1 {
@@ -449,17 +449,9 @@ textarea:focus::placeholder {
 
 /*Работа с адаптивностью*/
 @media screen and (max-width: 1400px) and (min-width:1200px) {
+
   .header {
     padding-left: 10%;
-  }
-
-  .grid-container {
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 480px 480px;
-  }
-
-  .grid-photo1, .grid-photo2 {
-    display: none;
   }
 }
 
@@ -624,10 +616,6 @@ textarea:focus::placeholder {
     .form-message {
       width: 350px;
       height: 160px;
-    }
-
-    .grid-container {
-      display: none;
     }
   }
 
